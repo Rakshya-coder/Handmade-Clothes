@@ -1,0 +1,40 @@
+.form{
+    display: block;
+    border: 1px solid black;
+    width: 400px;
+    height: 600 px;
+    margin: 20px auto;
+    padding: 20px;
+    font-size: 19px;
+    font-weight:bold ;
+    background-color: #FFFFFF	;
+}
+input {
+    width: 100%;
+  }
+  h2{
+    font-size: 25px;
+    text-align: center;
+  }
+.link{
+    padding: 20px;
+    text-align: start;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+
+}
+button{
+    background-color: #653C2E;
+    color:white;
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+button.hover{
+    opacity: 0.8;
+}

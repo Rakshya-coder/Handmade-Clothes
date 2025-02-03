@@ -1,0 +1,436 @@
+/* General Reset */
+body, h1, h2, h3, p, ul, li, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+
+.backgroundMain{
+    background-color:rgb(152, 22, 22);
+    color: rgb(15, 15, 15);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px 15px 80px;
+    margin-top: 2px;
+    height: 60vh;
+    width: 100%;
+}
+.backgroundMain .first-section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.backgroundMain .home-text{
+    flex: 1;
+    text-align: left;
+    padding: 30px;
+    
+}
+.backgroundMain .home-text .text-big{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.backgroundMain .home-img{
+    flex: 1;
+    text-align: right;
+}
+.backgroundMain .home-img img{
+    width: 350px;
+    height: auto;
+}
+
+
+
+
+/* Navigation Bar */
+/* Navigation Bar */
+nav {
+    background: #653C2E;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .2);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; /* Ensures all items align in the middle */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+    display: flex;
+    align-items: center; /* Ensures the text is vertically centered */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 10px; /* Adds some padding to the clickable area */
+}
+
+/* Dropdown */
+.profile-dropdown {
+    position: relative;
+}
+
+.profile-dropbtn {
+    background-color: #653C2E;
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.profile-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #653C2E;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.profile-dropdown-content a {
+    color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.profile-dropdown-content a:hover {
+    background-color: #573326;
+}
+
+.profile-dropdown:hover .profile-dropdown-content {
+    display: block;
+}
+
+.profile-dropdown:hover .profile-dropbtn {
+    background-color: #573326;
+}
+
+
+nav .logo img {
+    height: 85px;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20;
+}
+
+nav ul li {
+    margin: 0 15px;
+    text-align: center;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Signup and Login Forms */
+#signup-form, #login-form {
+    max-width: 500px;
+    margin: 200px auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+
+#signup-form h2, #login-form h2 {
+    margin-bottom: 15px;
+}
+
+#signup-form label, #login-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#signup-form input, #login-form input, #signup-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#signup-form button, #login-form button {
+    background: #653C2E;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#signup-form button:hover, #login-form button:hover {
+    background: #653C2E;
+}
+.featured-products {
+    padding: 40px 20px;
+    background: white;
+}
+
+.featured-products h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #333;
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    /* Space between product images */
+}
+
+.product-item {
+    background: #fff;
+    border: 1px solid #070707;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 20px);
+    /* Adjust width based on the number of items per row */
+    max-width: 300px;
+    /* Ensure a maximum width for consistency */
+    transition: transform 0.3s ease;
+}
+
+.product-item img {
+    width: 100%;
+    height: 250px;
+    /* Increase the height to better accommodate taller images */
+    object-fit: contain;
+    display: block;
+    border: #0c0b0b 2px;
+}
+
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+.product-details {
+    padding: 15px;
+    text-align: center;
+}
+
+.product-details h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #100f0f;
+}
+
+.product-details p {
+    font-size: 1.1em;
+    color: #0c0b0b;
+}
+
+.product-details .price {
+    font-size: 1.1em;
+    color:black;
+    font-weight: bold;
+}
+
+        
+/* Navigation Bar */
+nav {
+    background: #653C2E;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .2);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; /* Ensures all items align in the middle */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+    display: flex;
+    align-items: center; /* Ensures the text is vertically centered */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 10px; /* Adds some padding to the clickable area */
+}
+
+/* Dropdown Container */
+.profile-dropdown {
+    position: relative;
+}
+
+/* Profile Button */
+.profile-dropbtn {
+    background-color: #653C2E;
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* Dropdown Content: Initially Hidden */
+.profile-dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; /* Positions it right below the Profile button */
+    left: 0;
+    background-color: #653C2E;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 4px; /* Optional: adds a slight border-radius to the dropdown */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds a shadow for better visibility */
+}
+
+/* Links in Dropdown */
+.profile-dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 14px;
+}
+
+/* Dropdown Hover Effect */
+.profile-dropdown-content a:hover {
+    background-color: #573326;
+}
+
+/* Show Dropdown on Hover */
+.profile-dropdown:hover .profile-dropdown-content {
+    display: block;
+}
+
+/* Change Background on Hover */
+.profile-dropdown:hover .profile-dropbtn {
+    background-color: #573326;
+}
+
+/* footer */
+footer {
+    background-color: #573326;
+    color: #fff;
+    
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; /* Align content to the right */
+    align-items: flex-start; /* Align content to the top */
+    padding: 20px; /* Padding for spacing */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px 0;
+}
+
+.footer-section h3 {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #d1a054; /* Custom hover color */
+}
+
+
+
+#messgae{
+    text-align: right;
+    width: 50%
+}
+

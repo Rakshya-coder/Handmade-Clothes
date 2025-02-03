@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* about section starts */
+.about-section{
+    background-color:#FFFFFF;
+    color: #0d0e0e;
+    height: 18vh;
+    width: 100%;
+    margin-top: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.about-section h1{
+    font-size: 1.7rem;
+    text-align: center;
+    color: rgb(6, 5, 5);
+}
+.about-section .about-links p{
+    font-size: 1.2 rem;
+    margin-top: 3px;
+    color: #151414;
+}
+.about-section .about-links a{
+    text-decoration: none;
+    color: #070707;
+}
+.about-section .about-links a:hover{
+    color: #7edcfb;
+}
+.about-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 40px;
+}
+.about-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+.about-img img{
+    width: 100%;  
+  height: auto;
+  background-color: #FFFFFF;
+}
+.abt-parag{
+    padding: 10px;
+    width: 700px;
+    text-align: justify;
+}
+.abt-parag .txt-big{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #070707;
+    margin-bottom: 5px;
+}
+.abt-parag .txt-small{
+    font-size: 1.04rem;
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+.abt-parag .sub-txt{
+    font-size: 1.5rem;
+    color: #0d0e0e;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+/* contact section starts */
+.contact-section {
+    background-color: white; 
+    color: black; /* Section text color */
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px;
+}
+
+.contact-left, .contact-right {
+    width: 45%;
+}
+
+.contact-form {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #653C2E; 
+    background-color: white; 
+    color: black; 
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #653C2E; 
+    color: white; 
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background-color: darkbrown; 
+}
+
+.contact-details p {
+    margin: 15px 0;
+}
+
+.contact-details i {
+    margin-right: 10px;
+}
+
+
+
